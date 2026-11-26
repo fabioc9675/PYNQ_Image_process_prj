@@ -22,8 +22,17 @@
 IP/*/*
 !IP/*/*.xci*
 
-BD/*
-!BD/*.bd
+#BD/*
+#!bd/*.bd
+# Ignorar todo dentro de pynq_bd
+bd/pynq_bd/*
+# Re-incluir el directorio hdl
+!bd/pynq_bd/hdl/
+# Ignorar todo dentro de hdl
+bd/pynq_bd/hdl/*
+# Re-incluir los archivos deseados
+!bd/pynq_bd/hdl/pynq_bd_wrapper.vhd
+!bd/pynq_bd/pynq_bd.bd
 
 ## OS
 .DS_Store
