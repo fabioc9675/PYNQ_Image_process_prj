@@ -27,7 +27,7 @@
           "auto_pc": ""
         }
       },
-      "red_filter_axis_0": ""
+      "sobel_axis_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -2637,14 +2637,14 @@
           }
         }
       },
-      "red_filter_axis_0": {
-        "vlnv": "xilinx.com:module_ref:red_filter_axis:1.0",
-        "xci_name": "pynq_bd_red_filter_axis_0_0",
-        "xci_path": "ip\\pynq_bd_red_filter_axis_0_0\\pynq_bd_red_filter_axis_0_0.xci",
-        "inst_hier_path": "red_filter_axis_0",
+      "sobel_axis_0": {
+        "vlnv": "xilinx.com:module_ref:sobel_axis:1.0",
+        "xci_name": "pynq_bd_sobel_axis_0_0",
+        "xci_path": "ip\\pynq_bd_sobel_axis_0_0\\pynq_bd_sobel_axis_0_0.xci",
+        "inst_hier_path": "sobel_axis_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "red_filter_axis",
+          "ref_name": "sobel_axis",
           "boundary_crc": "0x0"
         },
         "interface_ports": {
@@ -2834,8 +2834,8 @@
     "interface_nets": {
       "axi_dma_0_M_AXIS_MM2S": {
         "interface_ports": [
-          "red_filter_axis_0/s_axis",
-          "axi_dma_0/M_AXIS_MM2S"
+          "axi_dma_0/M_AXIS_MM2S",
+          "sobel_axis_0/s_axis"
         ]
       },
       "axi_dma_0_M_AXI_MM2S": {
@@ -2880,9 +2880,9 @@
           "axi_dma_0/S_AXI_LITE"
         ]
       },
-      "red_filter_axis_0_m_axis": {
+      "sobel_axis_0_m_axis": {
         "interface_ports": [
-          "red_filter_axis_0/m_axis",
+          "sobel_axis_0/m_axis",
           "axi_dma_0/S_AXIS_S2MM"
         ]
       }
@@ -2904,7 +2904,7 @@
           "axi_mem_intercon/M00_ACLK",
           "axi_mem_intercon/ACLK",
           "axi_mem_intercon/S01_ACLK",
-          "red_filter_axis_0/aclk"
+          "sobel_axis_0/aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2924,7 +2924,7 @@
           "axi_mem_intercon/M00_ARESETN",
           "axi_mem_intercon/ARESETN",
           "axi_mem_intercon/S01_ARESETN",
-          "red_filter_axis_0/aresetn"
+          "sobel_axis_0/aresetn"
         ]
       }
     },
